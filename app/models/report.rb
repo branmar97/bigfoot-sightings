@@ -1,4 +1,6 @@
-class Report < ApplicationRecord 
+class Report < ApplicationRecord
+    attr_accessor :id, :case_num, :occurence, :city, :state, :vicinity, :conditions, :witnesses, :evidence, :account, :prints, :sounds, :additional_info, :created_at, :updated_at
+
     validates :case_num, presence: true
     validates :occurence, presence: { message: "Date can't be blank" }
     validates :city, presence: { message: "City can't be blank" }
