@@ -10,6 +10,15 @@ class ReportsController < ApplicationController
         render json: ReportSerializer.new(@report).serializable_hash[:data][:attributes].to_json
     end
 
+    def create 
+        report = Report.new(report_params)
+        if report.save
+            render json: ReportSerializer.new(report).serializable_hash[:data][:attributes].to_json
+        else 
+            render json: report.errors, status: 400
+        end
+    end 
+
     private 
 
     def set_report
