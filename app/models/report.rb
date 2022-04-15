@@ -13,6 +13,10 @@ class Report < ApplicationRecord
     validates :account, length: { minimum: 300,
         message: "Details must be at least %{count} characters" }
 
+    def account_summary
+        self.account.truncate(50)
+    end 
+
     private
 
     def generate_unique_case_num
