@@ -1,5 +1,5 @@
 class ReportsController < ApplicationController
-    before_action :set_report, only: [:show]
+    before_action :set_report, only: [:show, :destroy]
     
     def index
         @reports = Report.all
@@ -17,6 +17,10 @@ class ReportsController < ApplicationController
         else 
             render json: report.errors, status: 400
         end
+    end
+
+    def destroy
+        @report.destroy
     end 
 
     private 
