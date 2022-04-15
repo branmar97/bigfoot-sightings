@@ -6,8 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-report = Report.create(
-    case_num: 23909264, 
+report = Report.create( 
     occurence: DateTime.strptime("09/14/2009 8:00", "%m/%d/%Y %H:%M"), 
     city: "Newport News", 
     state: "Virginia", 
