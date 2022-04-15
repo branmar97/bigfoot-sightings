@@ -7,10 +7,10 @@ class Report < ApplicationRecord
     validates :vicinity, presence: { message: "Vicinity can't be blank" }
     validates :witnesses, presence: { message: "Please enter number of witnesses" }
     validates :evidence, presence: { message: "Evidence can't be blank" }
-    validates :evidence, length: { minimum: 150,
+    validates :evidence, length: { minimum: 25,
         message: "Evidence description must be at least %{count} characters" }
     validates :account, presence: { message: "Details can't be blank" }
-    validates :account, length: { minimum: 300,
+    validates :account, length: { minimum: 150,
         message: "Details must be at least %{count} characters" }
 
     def account_summary
