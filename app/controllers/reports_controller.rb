@@ -15,4 +15,8 @@ class ReportsController < ApplicationController
     def set_report
         @report = Report.find(params[:id])
     end 
+
+    def report_params 
+        params.require(:report).permit(:occurence, :city, :state, :vicinity, :conditions, :witnesses, :evidence, :account, :prints, :sounds, :additional_info)
+    end
 end
