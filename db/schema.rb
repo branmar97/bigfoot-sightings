@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_04_013933) do
+ActiveRecord::Schema.define(version: 2022_04_15_123646) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "reports", force: :cascade do |t|
-    t.integer "case_num"
+    t.integer "case_num", null: false
     t.datetime "occurence"
     t.string "city"
     t.string "state"
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 2022_04_04_013933) do
     t.text "additional_info"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["case_num"], name: "index_reports_on_case_num", unique: true
   end
 
 end
