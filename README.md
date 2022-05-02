@@ -1,6 +1,6 @@
 # Bigfoot Sightings Frontend
 
-Bigfoot Sighting is a web application where users can report sightings of bigfoot. Reports include time, location, witnesses, evidence, descriptions, prints, and sounds. View the backend repo [here](https://github.com/branmar97/bigfoot-sightings-frontend).
+Bigfoot Sighting is a web application where users can report sightings of bigfoot. Reports include time, location, witnesses, evidence, descriptions, prints, and sounds. View the frontend repo [here](https://github.com/branmar97/bigfoot-sightings-frontend).
 
 ## Usage
 
@@ -25,7 +25,7 @@ NOTE: Be sure to clone the [frontend-repo](https://github.com/branmar97/bigfoot-
 
 ## Contributing
 
-Bug reports and pull requests are welcome on Github at https://github.com/branmar97/apexlink-frontend
+Bug reports and pull requests are welcome on Github at https://github.com/branmar97/bigfoot-sightings
 
 ## License
 
